@@ -1,0 +1,32 @@
+{
+  "name": "api-server",
+  "version": "1.0.0",
+  "description": "## Version 1.0.00",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "lint": "eslint **/*.js",
+    "test": "NODE_ENV=test jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbchomp/api-server.git"
+  },
+  "author": "Heather Bisgaard",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbchomp/api-server/issues"
+  },
+  "homepage": "https://github.com/vbchomp/api-server#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jest": "^27.2.4",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
+    "sqlite3": "^5.0.2",
+    "supertest": "^6.1.6"
+  }
+}
